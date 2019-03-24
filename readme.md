@@ -1,4 +1,4 @@
-# Instructions for using docker image containing gazebo-ros simulation of remora-cubesat
+# Instructions for using docker image containing gazebo-ros simulation of dd-robot
 
 ### Run commands below in same directory
 
