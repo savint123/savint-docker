@@ -46,7 +46,7 @@
 
 ### execute following command to run the simulation once ros environment is sourced
 
->  **roslaunch remora gazebo.launch** 
+>  **roslaunch intel intel_robot.launch** 
 
 ### You should see simulation up and running
 ### Reference for docker file 
