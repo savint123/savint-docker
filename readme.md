@@ -4,16 +4,24 @@
 
 >  **docker build --tag=relaysim .** 
 
+### Or if you want to use pre-built image just login to docker hub
+###  you need approval from admin to pull this image as it will have
+### latest updates
+
+### use following command
+
+> **docker pull savint/relaysim:latest**
+
 ### Following command will run the docker image 
 
->    ***docker run -it --rm -d -p 4000:80 --env NVIDIA_VISIBLE_DEVICES=1 --name relay relaysim:latest***
+>    **docker run -it --rm -d -p 4000:80 --env NVIDIA_VISIBLE_DEVICES=1 --name relay relaysim:latest**
 
 ### Run following command to get in docker container
 
 >  **docker exec -it relay bash** 
 
 ### Note: you can create as much as iteractive terminals for docker but 
-### Here we need only on since we are going to use gui
+### Here we need only one terminal since we are going to use gui
 ### Once you are in docker container execute following command
 
 >  **./startup.sh** 
@@ -39,6 +47,10 @@
 ### Now source the setup environment of ros
 
 > **source /opt/ros/melodic/setup.bash**
+
+## Execute  following command to make the catkin_ws
+
+> **catkin_make*
 
 ### also everytime you want to run a package source setup in devel folder
 
