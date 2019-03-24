@@ -1,22 +1,19 @@
 # Instructions for using docker image containing gazebo-ros simulation of remora-cubesat
 
 ### Run commands below in same directory
-### In case start.sh is not executable
-
->  **chmod +x run.sh**
-### Command below should build the docker image and run the container name remora
 
 >  **docker build --tag=relaysim .** 
 
 ### Following command will run the docker image 
+
 >    ***docker run -it --rm -d -p 4000:80 --env NVIDIA_VISIBLE_DEVICES=1 --name relay relaysim:latest***
+
 ### Run following command to get in docker container
 
 >  **docker exec -it relay bash** 
 
 ### Note: you can create as much as iteractive terminals for docker but 
 ### Here we need only on since we are going to use gui
-
 ### Once you are in docker container execute following command
 
 >  **./startup.sh** 
