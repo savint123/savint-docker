@@ -1,4 +1,4 @@
-# Instructions for using docker image containing gazebo-ros simulation of dd-robot
+#Instructions for using docker image containing gazebo-ros simulation of dd-robot
 
 ### Run commands below in same directory
 
@@ -50,7 +50,7 @@
 
 ## Execute  following command to make the catkin_ws
 
-> **catkin_make*
+> **catkin_make**
 
 ### also everytime you want to run a package source setup in devel folder
 
